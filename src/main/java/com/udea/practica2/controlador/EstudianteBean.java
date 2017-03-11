@@ -34,12 +34,39 @@ public class EstudianteBean implements Serializable {
     private String programa;
     private byte[] foto;
     private Estudiante e;
+    private boolean disable=true;    
     String m;
     
     //Anotaciones
     @EJB
     private EstudianteFacadeLocal EstudianteFacade;
     private UIComponent mybutton;
+
+    public EstudianteFacadeLocal getEstudianteFacade() {
+        return EstudianteFacade;
+    }
+
+    public void setEstudianteFacade(EstudianteFacadeLocal EstudianteFacade) {
+        this.EstudianteFacade = EstudianteFacade;
+    }
+
+    public UIComponent getMybutton() {
+        return mybutton;
+    }
+
+    public void setMybutton(UIComponent mybutton) {
+        this.mybutton = mybutton;
+    }
+
+    public boolean isDisable() {
+        return disable;
+    }
+
+    public void setDisable(boolean disable) {
+        this.disable = disable;
+    }
+    
+    
     
     /**
      * Creates a new instance of EstudianteBean
@@ -151,6 +178,11 @@ public class EstudianteBean implements Serializable {
         e.setFoto(foto);
         this.EstudianteFacade.create(e);        
         return "Estudiante Creado";   
+    }
+    
+    //Accion para validar
+    public void validar(){
+        disable = false;
     }
     
     //Para Internacionalizacion

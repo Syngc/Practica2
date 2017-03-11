@@ -23,13 +23,13 @@
     </welcome-file-list>
     
     <context-param>
-        <param-name>primefaces.PUBLIC_CAPCHAT_KEY</param-name>
-        <param-value>6LfpexYUAAAAAGVSGPDz9NV2PpduOXKrLgys0TtH</param-value>     
+        <param-name>primefaces.PUBLIC_CAPTCHA_KEY</param-name>
+        <param-value>6LehihYUAAAAANAe7nUWhpG-hE_JWK-breqSe-WC</param-value>
     </context-param>
     
     <context-param>
-        <param-name>primefaces.PRIVATE_CAPCHAT_KEY</param-name>
-        <param-value>6LfpexYUAAAAAFBiF43Jx92KX-pVAJyX5LHXNoJq</param-value>     
+        <param-name>primefaces.PRIVATE_CAPTCHA_KEY</param-name>
+        <param-value>6LehihYUAAAAAPugdGWX-TW3VPlnTcQnPTig7ptr</param-value>
     </context-param>
     
 </web-app>
