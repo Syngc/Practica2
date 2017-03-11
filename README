@@ -11,7 +11,8 @@ create table estudiante(
     direccion varchar(50) not null,
     fechaNacimiento DATE not null,
     programa varchar(50) not null,
-    foto BLOB not null,
+    foto MEDIUMBLOB not null,
     primary key(documento,tipodoc)
- 
+
 );
+
